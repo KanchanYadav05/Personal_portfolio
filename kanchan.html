@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="kanchan.css">
+        <title>Personal Portfolio</title>
+        <script src="https://kit.fontawesome.com/20546be729.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <p class="logo"><span>PORT</span>FOLIO</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="headertxt">
+                    <p>Welcome To My Portfolio</p>
+                    <h1> I'm <span>Kanchan Yadav</span></h1>
+                    <p><span>A Web Developer</span><br></p>
+                </div>
+            </div>
+        </div>
+        <!--about-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1"><img src="1000041092.jpg"></div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello I'm Kanchan Yadav, a web developer. I am currently a 2  <sup>nd</sup> nd year student at Deen Dayal Upadhyay Gorakhpur University earning a degree of Bachelor of Technology in IT.<br>I am eager to contribute my skills and knowledge to make a positive impact.I'm hard working, honest ,individual a good timekeeper. I am able to work independently in busy environments and also within a team setting.<br>I hope that this portfolio provides insight into my character, programming background, analytical skills, and accomplishments. After graduating with my bachelor's degree. I would like to obtain a position as an engineer to utilize my knowledge & background in programming.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li>C Language</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>PHP</li>
+                                    <li>DBMS</li>
+                                    <li>Python</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021-Current Status</span><br>Bachelor of Technology-B.Tech from Deen Dayal Upadhyay Gorakhpur University Gorakhpur</li>
+                                    <li><span>APRIL 2018 - MARCH 2019</span><br>10th From Laxmi Prasad Memorial Public School, Gola Bazar ,Gorakhpur</li>
+                                    <li><span>APRIL 2020 - MARCH 2021</span><br>10th From Laxmi Prasad Memorial Public School, Gola Bazar ,Gorakhpur</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div >
+                        <h2>Web Design</h2>
+                        <p>A well-designed website is a powerful marketing and communication tool that helps to build trust and generate leads.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Web Application</h2>
+                        <p>Web applications can reach a global audience. They're interactive and engaging, so can easily hold user's attention.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>eCommerce</h2>
+                        <p>With eCommerce solutions, businesses can operate 24 hours a day, 7 days a week, and reach customers in any time zone.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ------contact------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>kanchanyadav2003**@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>74******00</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="#" class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form >
+                            <input type="text" name="Name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="E-mail" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>
